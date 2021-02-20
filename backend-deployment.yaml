@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: backend
   labels:
-    app.kubernetes.io/name: guestbook
-    app.kubernetes.io/component: frontend
+    app.kubernetes.io/name: djangoBook
+    app.kubernetes.io/component: backend
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: guestbook
-      app.kubernetes.io/component: frontend
+      app.kubernetes.io/name: djangoBook
+      app.kubernetes.io/component: backend
   replicas: 3
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: guestbook
-        app.kubernetes.io/component: frontend
+        app.kubernetes.io/name: djangoBook
+        app.kubernetes.io/component: backend
     spec:
       containers:
-      - name: guestbook
+      - name: djangoBook
         image: worldwidemaster/sample_django_docker
         resources:
           requests:
