@@ -4,11 +4,11 @@ metadata:
   name: mongo
   labels:
     app.kubernetes.io/name: mongo
-    app.kubernetes.io/component: backend
+    app.kubernetes.io/component: mongoDB
 spec:
   ports:
   - port: 27017
     targetPort: 27017
   selector:
     app.kubernetes.io/name: mongo
-    app.kubernetes.io/component: backend
+    app.kubernetes.io/component: mongoDB
