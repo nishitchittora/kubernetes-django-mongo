@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: paulczar/gb-frontend:v5
+        image: worldwidemaster/sample_django_docker
         resources:
           requests:
             cpu: 100m
