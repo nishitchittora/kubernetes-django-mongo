@@ -29,7 +29,7 @@ Demo deployment of Mongo DB with Django using K8s
 	```
 7. Query the list of Pods to verify that the three backend replicas are running:
 	```shell
-	kubectl get pods -l app.kubernetes.io/name=djangoBook -l app.kubernetes.io/component=backend
+	kubectl get pods -l app.kubernetes.io/name=django_book -l app.kubernetes.io/component=backend
 	```
 8.  Apply the backend service from the `backend-service.yaml` file:
 	```shell

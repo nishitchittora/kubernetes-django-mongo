@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: backend
   labels:
-    app.kubernetes.io/name: djangoBook
+    app.kubernetes.io/name: django_book
     app.kubernetes.io/component: backend
 spec:
   # type: LoadBalancer
   ports:
   - port: 80
   selector:
-    app.kubernetes.io/name: djangoBook
+    app.kubernetes.io/name: django_book
     app.kubernetes.io/component: backend
