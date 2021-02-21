@@ -50,8 +50,8 @@ Deleting the Deployments and Services also deletes any running Pods. Use labels 
 	```shell
 	kubectl delete deployment -l app.kubernetes.io/name=mongo
 	kubectl delete service -l app.kubernetes.io/name=mongo
-	kubectl delete deployment -l app.kubernetes.io/name=guestbook
-	kubectl delete service -l app.kubernetes.io/name=guestbook
+	kubectl delete deployment -l app.kubernetes.io/name=django_book
+	kubectl delete service -l app.kubernetes.io/name=django_book
 	```
 2. Query the list of Pods to verify that no Pods are running:
 	```shell
