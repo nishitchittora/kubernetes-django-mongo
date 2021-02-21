@@ -39,9 +39,9 @@ Demo deployment of Mongo DB with Django using K8s
 	```shell
 	kubectl get services
 	```
-10. Then finally, Run the following command to forward port  `8080`  on your local machine to port  `80`  on the service.
+10. Then finally, Run the following command to forward port  `8080`  on your local machine to port  `8000`  on the service.
 	```shell
-	kubectl port-forward svc/backend 8080:80
+	kubectl port-forward svc/backend 8000:8000
 	```
 ### Cleaning up
 Deleting the Deployments and Services also deletes any running Pods. Use labels to delete multiple resources with one command.
